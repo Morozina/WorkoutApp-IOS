@@ -13,7 +13,7 @@ class SessionViewController: BaseViewController {
         super.viewDidLoad()
         
         title = "High Intensity Cardio"
-        navigationController?.tabBarItem.title = TabBarResources.Strings.session
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
         
         addBarButton(position: .left, title: "Play")
         addBarButton(position: .right, title: "Pause")

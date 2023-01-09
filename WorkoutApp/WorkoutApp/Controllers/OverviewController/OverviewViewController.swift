@@ -42,7 +42,7 @@ extension OverviewViewController {
         super.config()
         
         view.makeSystem(allWorkoutButton)
-        allWorkoutButton.setTitle(OverviewControllerResources.Strings.allWorkoutButton)
+        allWorkoutButton.setTitle(Resources.Strings.OverviewController.allWorkoutButton)
         allWorkoutButton.translatesAutoresizingMaskIntoConstraints = false
         allWorkoutButton.addTarget(self, action: #selector(allWorkoutTapped), for: .touchUpInside)
     }

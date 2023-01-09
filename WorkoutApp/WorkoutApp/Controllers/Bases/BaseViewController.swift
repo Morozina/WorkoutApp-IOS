@@ -30,7 +30,7 @@ class BaseViewController: UIViewController {
     func layoutViews() {}
     
     func config() {
-        view.backgroundColor = NavBarResources.Colors.background
+        view.backgroundColor = Resources.Colors.NavBar.background
     }
     
     func rightButtonHandler() {
@@ -46,9 +46,9 @@ extension BaseViewController {
     func addBarButton(position: BarButtonPosition, title: String) {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
-        button.setTitleColor(TabBarResources.Colors.active, for: .normal)
-        button.setTitleColor(TabBarResources.Colors.inActive, for: .disabled)
-        button.titleLabel?.font = NavBarResources.Fonts.HelveticaRegular(size: 17)
+        button.setTitleColor(Resources.Colors.TabBar.active, for: .normal)
+        button.setTitleColor(Resources.Colors.TabBar.inActive, for: .disabled)
+        button.titleLabel?.font = Resources.Fonts.NavBar.HelveticaRegular(size: 17)
         
         switch position {
         case .right:

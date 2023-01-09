@@ -50,16 +50,16 @@ private extension SecondaryButton {
     }
     
     func config() {
-        backgroundColor = CommonResources.Colors.customButtonBackground
+        backgroundColor = Resources.Colors.Common.customButtonBackground
         layer.cornerRadius = 14
         
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = TabBarResources.Colors.active
+        label.textColor = Resources.Colors.TabBar.active
         label.textAlignment = .center
-        label.font = NavBarResources.Fonts.HelveticaRegular(size: 15)
+        label.font = Resources.Fonts.NavBar.HelveticaRegular(size: 15)
         
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = CommonResources.Image.down_arrow?.withRenderingMode(.alwaysTemplate)
-        icon.tintColor = TabBarResources.Colors.active
+        icon.image = Resources.Image.Common.down_arrow?.withRenderingMode(.alwaysTemplate)
+        icon.tintColor = Resources.Colors.TabBar.active
     }
 }
