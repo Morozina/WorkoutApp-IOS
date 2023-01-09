@@ -14,6 +14,14 @@
 		51447D36296B122C00B5171F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D35296B122C00B5171F /* TabBarController.swift */; };
 		51447D39296B130700B5171F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D38296B130700B5171F /* UIColor+Extensions.swift */; };
 		51447D3C296B13B000B5171F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D3B296B13B000B5171F /* Resources.swift */; };
+		51447D47296B2B1A00B5171F /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D46296B2B1A00B5171F /* NavBarViewController.swift */; };
+		51447D49296B2CA000B5171F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D48296B2CA000B5171F /* BaseViewController.swift */; };
+		51447D4B296B2D6100B5171F /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D4A296B2D6100B5171F /* OverviewViewController.swift */; };
+		51447D4D296B2D7600B5171F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D4C296B2D7600B5171F /* SessionViewController.swift */; };
+		51447D4F296B2D8600B5171F /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D4E296B2D8600B5171F /* ProgressViewController.swift */; };
+		51447D51296B2D9700B5171F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D50296B2D9700B5171F /* SettingsViewController.swift */; };
+		51447D53296B2DFC00B5171F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D52296B2DFC00B5171F /* UIView+Extension.swift */; };
+		51447D56296C510C00B5171F /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D55296C510C00B5171F /* SecondaryButton.swift */; };
 		621A9EE649AA4B6EE0061DB5 /* Pods_WorkoutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4492C724D1D08976D3EE5BFF /* Pods_WorkoutApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +37,14 @@
 		51447D35296B122C00B5171F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		51447D38296B130700B5171F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		51447D3B296B13B000B5171F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		51447D46296B2B1A00B5171F /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
+		51447D48296B2CA000B5171F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		51447D4A296B2D6100B5171F /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		51447D4C296B2D7600B5171F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		51447D4E296B2D8600B5171F /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		51447D50296B2D9700B5171F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		51447D52296B2DFC00B5171F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		51447D55296C510C00B5171F /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		6B3F48EBDE0222A0FC2EE5E8 /* Pods-WorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,9 +71,6 @@
 		51447D14296B0B7100B5171F = {
 			isa = PBXGroup;
 			children = (
-				51447D35296B122C00B5171F /* TabBarController.swift */,
-				51447D3A296B138C00B5171F /* Resources */,
-				51447D37296B12DA00B5171F /* Extensions */,
 				51447D1F296B0B7100B5171F /* WorkoutApp */,
 				51447D1E296B0B7100B5171F /* Products */,
 				9154CD3D1B99477ACA2768B5 /* Pods */,
@@ -76,7 +89,10 @@
 		51447D1F296B0B7100B5171F /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				51447D40296B2A1500B5171F /* Controllers */,
 				51447D34296B0B7D00B5171F /* Resources */,
+				51447D3A296B138C00B5171F /* Atributes */,
+				51447D37296B12DA00B5171F /* Extensions */,
 				51447D29296B0B7300B5171F /* Assets.xcassets */,
 				51447D2B296B0B7300B5171F /* LaunchScreen.storyboard */,
 				51447D2E296B0B7300B5171F /* Info.plist */,
@@ -97,16 +113,82 @@
 			isa = PBXGroup;
 			children = (
 				51447D38296B130700B5171F /* UIColor+Extensions.swift */,
+				51447D52296B2DFC00B5171F /* UIView+Extension.swift */,
 			);
 			name = Extensions;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		51447D3A296B138C00B5171F /* Resources */ = {
+		51447D3A296B138C00B5171F /* Atributes */ = {
 			isa = PBXGroup;
 			children = (
 				51447D3B296B13B000B5171F /* Resources.swift */,
 			);
-			name = Resources;
+			name = Atributes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		51447D40296B2A1500B5171F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51447D45296B2AB100B5171F /* SettingsController */,
+				51447D44296B2A9E00B5171F /* ProgressController */,
+				51447D43296B2A9200B5171F /* SessionController */,
+				51447D42296B2A7D00B5171F /* OverviewController */,
+				51447D41296B2A6D00B5171F /* Bases */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51447D41296B2A6D00B5171F /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				51447D35296B122C00B5171F /* TabBarController.swift */,
+				51447D46296B2B1A00B5171F /* NavBarViewController.swift */,
+				51447D48296B2CA000B5171F /* BaseViewController.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		51447D42296B2A7D00B5171F /* OverviewController */ = {
+			isa = PBXGroup;
+			children = (
+				51447D54296C50F200B5171F /* Views */,
+				51447D4A296B2D6100B5171F /* OverviewViewController.swift */,
+			);
+			path = OverviewController;
+			sourceTree = "<group>";
+		};
+		51447D43296B2A9200B5171F /* SessionController */ = {
+			isa = PBXGroup;
+			children = (
+				51447D4C296B2D7600B5171F /* SessionViewController.swift */,
+			);
+			path = SessionController;
+			sourceTree = "<group>";
+		};
+		51447D44296B2A9E00B5171F /* ProgressController */ = {
+			isa = PBXGroup;
+			children = (
+				51447D4E296B2D8600B5171F /* ProgressViewController.swift */,
+			);
+			path = ProgressController;
+			sourceTree = "<group>";
+		};
+		51447D45296B2AB100B5171F /* SettingsController */ = {
+			isa = PBXGroup;
+			children = (
+				51447D50296B2D9700B5171F /* SettingsViewController.swift */,
+			);
+			path = SettingsController;
+			sourceTree = "<group>";
+		};
+		51447D54296C50F200B5171F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51447D55296C510C00B5171F /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9154CD3D1B99477ACA2768B5 /* Pods */ = {
@@ -115,7 +197,6 @@
 				6B3F48EBDE0222A0FC2EE5E8 /* Pods-WorkoutApp.debug.xcconfig */,
 				44D2F085C21751FB89D21630 /* Pods-WorkoutApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -126,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51447D31296B0B7300B5171F /* Build configuration list for PBXNativeTarget "WorkoutApp" */;
 			buildPhases = (
+				51447D3F296B1C1100B5171F /* ShellScript */,
 				6E7A259494CBD3E9A0815C44 /* [CP] Check Pods Manifest.lock */,
 				51447D19296B0B7100B5171F /* Sources */,
 				51447D1A296B0B7100B5171F /* Frameworks */,
@@ -186,6 +268,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51447D3F296B1C1100B5171F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		6E7A259494CBD3E9A0815C44 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,8 +317,16 @@
 			files = (
 				51447D36296B122C00B5171F /* TabBarController.swift in Sources */,
 				51447D3C296B13B000B5171F /* Resources.swift in Sources */,
+				51447D51296B2D9700B5171F /* SettingsViewController.swift in Sources */,
+				51447D47296B2B1A00B5171F /* NavBarViewController.swift in Sources */,
+				51447D4D296B2D7600B5171F /* SessionViewController.swift in Sources */,
 				51447D21296B0B7100B5171F /* AppDelegate.swift in Sources */,
+				51447D56296C510C00B5171F /* SecondaryButton.swift in Sources */,
+				51447D53296B2DFC00B5171F /* UIView+Extension.swift in Sources */,
+				51447D4F296B2D8600B5171F /* ProgressViewController.swift in Sources */,
 				51447D23296B0B7100B5171F /* SceneDelegate.swift in Sources */,
+				51447D4B296B2D6100B5171F /* OverviewViewController.swift in Sources */,
+				51447D49296B2CA000B5171F /* BaseViewController.swift in Sources */,
 				51447D39296B130700B5171F /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

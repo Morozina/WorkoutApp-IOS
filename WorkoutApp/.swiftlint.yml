@@ -1,0 +1,6 @@
+line_length:
+- 200 # Warning
+- 300 # Error
+disabled_rules:
+- identifier_name
+- trailing_whitespace
