@@ -9,7 +9,7 @@ import UIKit
 
 class OverviewViewController: BaseViewController {
 
-    let allWorkoutButton = SecondaryButton()
+    private let navBar = OverviewNavBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,32 +24,23 @@ extension OverviewViewController {
     override func addViews() {
         super.addViews()
         
-        view.addSubview(allWorkoutButton)
+        view.addView(navBar)
     }
     
     override func layoutViews() {
         super.layoutViews()
         
         NSLayoutConstraint.activate([
-            allWorkoutButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            allWorkoutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            allWorkoutButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutButton.widthAnchor.constraint(equalToConstant: 130)
+            navBar.topAnchor.constraint(equalTo: view.topAnchor),
+            navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+//            navBar.heightAnchor.constraint(equalToConstant: 113)
         ])
     }
     
     override func config() {
         super.config()
         
-        view.makeSystem(allWorkoutButton)
-        allWorkoutButton.setTitle(Resources.Strings.OverviewController.allWorkoutButton)
-        allWorkoutButton.translatesAutoresizingMaskIntoConstraints = false
-        allWorkoutButton.addTarget(self, action: #selector(allWorkoutTapped), for: .touchUpInside)
-    }
-}
-
-@objc extension OverviewViewController {
-    func allWorkoutTapped() {
-        print("Tapped")
+        navigationController?.navigationBar.isHidden = true
     }
 }

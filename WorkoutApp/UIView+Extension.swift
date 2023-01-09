@@ -29,6 +29,11 @@ extension UIView {
             .touchCancel
         ])
     }
+    
+    func addView(_ view: UIView) {
+        addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+    }
 }
 
 @objc extension UIView {

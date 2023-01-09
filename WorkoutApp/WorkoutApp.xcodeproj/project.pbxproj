@@ -22,6 +22,8 @@
 		51447D51296B2D9700B5171F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D50296B2D9700B5171F /* SettingsViewController.swift */; };
 		51447D53296B2DFC00B5171F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D52296B2DFC00B5171F /* UIView+Extension.swift */; };
 		51447D56296C510C00B5171F /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D55296C510C00B5171F /* SecondaryButton.swift */; };
+		51447D58296C686300B5171F /* baseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D57296C686300B5171F /* baseView.swift */; };
+		51447D5A296C691900B5171F /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D59296C691900B5171F /* OverviewNavBar.swift */; };
 		621A9EE649AA4B6EE0061DB5 /* Pods_WorkoutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4492C724D1D08976D3EE5BFF /* Pods_WorkoutApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		51447D50296B2D9700B5171F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		51447D52296B2DFC00B5171F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		51447D55296C510C00B5171F /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		51447D57296C686300B5171F /* baseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseView.swift; sourceTree = "<group>"; };
+		51447D59296C691900B5171F /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		6B3F48EBDE0222A0FC2EE5E8 /* Pods-WorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,7 @@
 				51447D35296B122C00B5171F /* TabBarController.swift */,
 				51447D46296B2B1A00B5171F /* NavBarViewController.swift */,
 				51447D48296B2CA000B5171F /* BaseViewController.swift */,
+				51447D57296C686300B5171F /* baseView.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				51447D55296C510C00B5171F /* SecondaryButton.swift */,
+				51447D59296C691900B5171F /* OverviewNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,9 +323,11 @@
 			files = (
 				51447D36296B122C00B5171F /* TabBarController.swift in Sources */,
 				51447D3C296B13B000B5171F /* Resources.swift in Sources */,
+				51447D5A296C691900B5171F /* OverviewNavBar.swift in Sources */,
 				51447D51296B2D9700B5171F /* SettingsViewController.swift in Sources */,
 				51447D47296B2B1A00B5171F /* NavBarViewController.swift in Sources */,
 				51447D4D296B2D7600B5171F /* SessionViewController.swift in Sources */,
+				51447D58296C686300B5171F /* baseView.swift in Sources */,
 				51447D21296B0B7100B5171F /* AppDelegate.swift in Sources */,
 				51447D56296C510C00B5171F /* SecondaryButton.swift in Sources */,
 				51447D53296B2DFC00B5171F /* UIView+Extension.swift in Sources */,

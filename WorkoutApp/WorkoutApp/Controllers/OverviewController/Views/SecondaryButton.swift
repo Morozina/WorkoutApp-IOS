@@ -31,12 +31,12 @@ final class SecondaryButton: UIButton {
 
 private extension SecondaryButton {
   
-    func addView() {
-        addSubview(label)
-        addSubview(icon)
+    private func addView() {
+        addView(label)
+        addView(icon)
     }
     
-    func addLayout() {
+    private func addLayout() {
         NSLayoutConstraint.activate([
             icon.centerYAnchor.constraint(equalTo: centerYAnchor),
             icon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
@@ -49,16 +49,14 @@ private extension SecondaryButton {
         ])
     }
     
-    func config() {
+    private func config() {
         backgroundColor = Resources.Colors.Common.customButtonBackground
         layer.cornerRadius = 14
         
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Resources.Colors.TabBar.active
         label.textAlignment = .center
         label.font = Resources.Fonts.NavBar.HelveticaRegular(size: 15)
         
-        icon.translatesAutoresizingMaskIntoConstraints = false
         icon.image = Resources.Image.Common.down_arrow?.withRenderingMode(.alwaysTemplate)
         icon.tintColor = Resources.Colors.TabBar.active
     }
