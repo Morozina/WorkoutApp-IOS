@@ -34,7 +34,6 @@ extension OverviewViewController {
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-//            navBar.heightAnchor.constraint(equalToConstant: 113)
         ])
     }
     

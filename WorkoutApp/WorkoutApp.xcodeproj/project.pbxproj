@@ -24,6 +24,9 @@
 		51447D56296C510C00B5171F /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D55296C510C00B5171F /* SecondaryButton.swift */; };
 		51447D58296C686300B5171F /* baseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D57296C686300B5171F /* baseView.swift */; };
 		51447D5A296C691900B5171F /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51447D59296C691900B5171F /* OverviewNavBar.swift */; };
+		51DA5BA0296CDC1200782E43 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA5B9F296CDC1200782E43 /* WeekView.swift */; };
+		51DA5BA2296CDD9000782E43 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA5BA1296CDD9000782E43 /* WeekDayView.swift */; };
+		51DA5BA4296CE34800782E43 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA5BA3296CE34800782E43 /* Date+Extension.swift */; };
 		621A9EE649AA4B6EE0061DB5 /* Pods_WorkoutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4492C724D1D08976D3EE5BFF /* Pods_WorkoutApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		51447D55296C510C00B5171F /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		51447D57296C686300B5171F /* baseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseView.swift; sourceTree = "<group>"; };
 		51447D59296C691900B5171F /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
+		51DA5B9F296CDC1200782E43 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		51DA5BA1296CDD9000782E43 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		51DA5BA3296CE34800782E43 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		6B3F48EBDE0222A0FC2EE5E8 /* Pods-WorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +99,10 @@
 		51447D1F296B0B7100B5171F /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
-				51447D40296B2A1500B5171F /* Controllers */,
-				51447D34296B0B7D00B5171F /* Resources */,
-				51447D3A296B138C00B5171F /* Atributes */,
+				51447D34296B0B7D00B5171F /* Application */,
 				51447D37296B12DA00B5171F /* Extensions */,
+				51447D3A296B138C00B5171F /* Atributes */,
+				51447D40296B2A1500B5171F /* Controllers */,
 				51447D29296B0B7300B5171F /* Assets.xcassets */,
 				51447D2B296B0B7300B5171F /* LaunchScreen.storyboard */,
 				51447D2E296B0B7300B5171F /* Info.plist */,
@@ -104,13 +110,13 @@
 			path = WorkoutApp;
 			sourceTree = "<group>";
 		};
-		51447D34296B0B7D00B5171F /* Resources */ = {
+		51447D34296B0B7D00B5171F /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				51447D20296B0B7100B5171F /* AppDelegate.swift */,
 				51447D22296B0B7100B5171F /* SceneDelegate.swift */,
 			);
-			path = Resources;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		51447D37296B12DA00B5171F /* Extensions */ = {
@@ -118,6 +124,7 @@
 			children = (
 				51447D38296B130700B5171F /* UIColor+Extensions.swift */,
 				51447D52296B2DFC00B5171F /* UIView+Extension.swift */,
+				51DA5BA3296CE34800782E43 /* Date+Extension.swift */,
 			);
 			name = Extensions;
 			path = ..;
@@ -191,10 +198,20 @@
 		51447D54296C50F200B5171F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				51DA5B9E296CDBDB00782E43 /* Date */,
 				51447D55296C510C00B5171F /* SecondaryButton.swift */,
 				51447D59296C691900B5171F /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		51DA5B9E296CDBDB00782E43 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				51DA5B9F296CDC1200782E43 /* WeekView.swift */,
+				51DA5BA1296CDD9000782E43 /* WeekDayView.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		9154CD3D1B99477ACA2768B5 /* Pods */ = {
@@ -321,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DA5BA0296CDC1200782E43 /* WeekView.swift in Sources */,
 				51447D36296B122C00B5171F /* TabBarController.swift in Sources */,
 				51447D3C296B13B000B5171F /* Resources.swift in Sources */,
 				51447D5A296C691900B5171F /* OverviewNavBar.swift in Sources */,
@@ -334,8 +352,10 @@
 				51447D4F296B2D8600B5171F /* ProgressViewController.swift in Sources */,
 				51447D23296B0B7100B5171F /* SceneDelegate.swift in Sources */,
 				51447D4B296B2D6100B5171F /* OverviewViewController.swift in Sources */,
+				51DA5BA2296CDD9000782E43 /* WeekDayView.swift in Sources */,
 				51447D49296B2CA000B5171F /* BaseViewController.swift in Sources */,
 				51447D39296B130700B5171F /* UIColor+Extensions.swift in Sources */,
+				51DA5BA4296CE34800782E43 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

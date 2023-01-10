@@ -11,8 +11,7 @@ final class OverviewNavBar: BaseView {
     private let addButton = UIButton()
     private let allWorkoutButton = SecondaryButton()
     private let titleLabel = UILabel()
-    
-    private let weekView = UIView()
+    private let weekView = WeekView()
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -70,9 +69,6 @@ extension OverviewNavBar {
         allWorkoutButton.makeSystem(allWorkoutButton)
         allWorkoutButton.setTitle(Resources.Strings.OverviewController.allWorkoutButton)
         allWorkoutButton.addTarget(self, action: #selector(allWorkoutTapped), for: .touchUpInside)
-        
-        weekView.backgroundColor = .systemCyan
-        weekView.layer.opacity = 0.3
     }
 }
 
