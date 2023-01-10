@@ -13,22 +13,22 @@ class OverviewViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addViews()
-        layoutViews()
+        setUpViews()
+        setUpLayouts()
         config()
     }
 }
 
 extension OverviewViewController {
     
-    override func addViews() {
-        super.addViews()
+    override func setUpViews() {
+        super.setUpViews()
         
-        view.addView(navBar)
+        view.addNewView(navBar)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func setUpLayouts() {
+        super.setUpLayouts()
         
         NSLayoutConstraint.activate([
             navBar.topAnchor.constraint(equalTo: view.topAnchor),

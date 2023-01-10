@@ -17,17 +17,17 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addViews()
-        layoutViews()
+        setUpViews()
+        setUpLayouts()
         config()
     }
 }
 
 @objc extension BaseViewController {
     
-    func addViews() {}
+    func setUpViews() {}
     
-    func layoutViews() {}
+    func setUpLayouts() {}
     
     func config() {
         view.backgroundColor = Resources.Colors.NavBar.background

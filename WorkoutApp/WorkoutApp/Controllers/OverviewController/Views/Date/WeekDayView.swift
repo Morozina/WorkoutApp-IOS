@@ -17,8 +17,8 @@ final class WeekDayView: BaseView {
         let currentDay = startOfWeek.goForward(days: weekNumber)
         let day = Calendar.current.component(.day, from: currentDay)
         
-        var isCurrentDate = currentDay.stripDate() == Date().stripDate()
-        
+        let isCurrentDate = currentDay.stripDate() == Date().stripDate()
+
         backgroundColor = isCurrentDate ? Resources.Colors.TabBar.active : Resources.Colors.NavBar.background
         
         TitleOfDay.text = weekTitle.uppercased()
@@ -30,15 +30,15 @@ final class WeekDayView: BaseView {
 }
 extension WeekDayView {
     
-    override func addViews() {
-        super.addViews()
-        addView(stackView)
+    override func setUpViews() {
+        super.setUpViews()
+        addNewView(stackView)
         stackView.addArrangedSubview(TitleOfDay)
         stackView.addArrangedSubview(NumberOfDay)
     }
     
-    override func addLayout() {
-        super.addLayout()
+    override func setUpLayouts() {
+        super.setUpLayouts()
         
         NSLayoutConstraint.activate([
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),

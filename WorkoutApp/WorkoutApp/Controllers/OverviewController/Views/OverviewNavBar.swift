@@ -9,7 +9,7 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     private let addButton = UIButton()
-    private let allWorkoutButton = SecondaryButton()
+    private let allWorkoutButton = WAButton(type: .secondary)
     private let titleLabel = UILabel()
     private let weekView = WeekView()
     
@@ -20,16 +20,16 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
-        addView(allWorkoutButton)
-        addView(addButton)
-        addView(titleLabel)
-        addView(weekView)
+    override func setUpViews() {
+        super.setUpViews()
+        addNewView(allWorkoutButton)
+        addNewView(addButton)
+        addNewView(titleLabel)
+        addNewView(weekView)
     }
     
-    override func addLayout() {
-        super.addLayout()
+    override func setUpLayouts() {
+        super.setUpLayouts()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),

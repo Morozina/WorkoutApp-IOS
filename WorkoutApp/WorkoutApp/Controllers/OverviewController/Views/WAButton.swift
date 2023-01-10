@@ -7,13 +7,21 @@
 
 import UIKit
 
-final class SecondaryButton: UIButton {
+enum TypeButton {
+    case primary
+    case secondary
+}
+
+final class WAButton: UIButton {
     
+    private var type: TypeButton = .primary
     private let label = UILabel()
     private let icon = UIImageView()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(type: TypeButton) {
+        super.init(frame: .zero)
+        
+        self.type = type
         
         addView()
         addLayout()
@@ -24,16 +32,16 @@ final class SecondaryButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setTitle(_ String: String) {
+    func setTitle(_ String: String?) {
         label.text = String
     }
 }
 
-private extension SecondaryButton {
+private extension WAButton {
   
     private func addView() {
-        addView(label)
-        addView(icon)
+        addNewView(label)
+        addNewView(icon)
     }
     
     private func addLayout() {
@@ -50,14 +58,27 @@ private extension SecondaryButton {
     }
     
     private func config() {
-        backgroundColor = Resources.Colors.Common.customButtonBackground
+        
+        switch type {
+        case .primary:
+            backgroundColor = .clear
+    
+            label.textColor = Resources.Colors.TabBar.inActive
+            icon.tintColor = Resources.Colors.TabBar.inActive
+        case .secondary:
+            backgroundColor = Resources.Colors.Common.customButtonBackground
+            layer.cornerRadius = 14
+            
+            label.textColor = Resources.Colors.TabBar.active
+            label.textAlignment = .center
+            
+            icon.image = Resources.Image.Common.down_arrow?.withRenderingMode(.alwaysTemplate)
+            icon.tintColor = Resources.Colors.TabBar.active
+        }
         layer.cornerRadius = 14
-        
-        label.textColor = Resources.Colors.TabBar.active
-        label.textAlignment = .center
         label.font = Resources.Fonts.NavBar.HelveticaRegular(size: 15)
-        
+        label.textAlignment = .center
         icon.image = Resources.Image.Common.down_arrow?.withRenderingMode(.alwaysTemplate)
-        icon.tintColor = Resources.Colors.TabBar.active
+
     }
 }
