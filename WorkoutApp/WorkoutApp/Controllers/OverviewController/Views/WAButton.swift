@@ -79,6 +79,5 @@ private extension WAButton {
         label.font = Resources.Fonts.NavBar.HelveticaRegular(size: 15)
         label.textAlignment = .center
         icon.image = Resources.Image.Common.down_arrow?.withRenderingMode(.alwaysTemplate)
-
     }
 }

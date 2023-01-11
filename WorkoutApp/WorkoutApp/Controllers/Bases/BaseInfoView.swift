@@ -56,7 +56,6 @@ extension BaseInfoView {
             moreButton.trailingAnchor.constraint(equalTo: trailingAnchor),
             moreButton.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
             moreButton.heightAnchor.constraint(equalToConstant: 28),
-//            moreButton.widthAnchor.constraint(equalToConstant: 130),
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),

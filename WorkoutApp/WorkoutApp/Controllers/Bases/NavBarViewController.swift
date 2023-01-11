@@ -16,6 +16,7 @@ class NavBarViewController: UINavigationController {
     
     private func config() {
         view.backgroundColor = .white
+        
         navigationBar.isTranslucent = false
         navigationBar.standardAppearance.titleTextAttributes = [
             .foregroundColor: Resources.Colors.NavBar.titleGray,

@@ -57,6 +57,5 @@ extension WeekDayView {
         
         NumberOfDay.textAlignment = .center
         NumberOfDay.font = Resources.Fonts.NavBar.HelveticaRegular(size: 15)
-        
     }
 }
