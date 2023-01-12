@@ -9,7 +9,7 @@ import UIKit
 
 class SessionViewController: BaseViewController {
 
-    private let timerView = BaseInfoView()
+    private let timerView = TimerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

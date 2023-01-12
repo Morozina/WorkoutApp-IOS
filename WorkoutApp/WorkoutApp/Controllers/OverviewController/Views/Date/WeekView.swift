@@ -8,7 +8,6 @@
 import UIKit
 
 final class WeekView: BaseView {
-    private let calendar = Calendar.current
     private let stackView = UIStackView()
 }
 
@@ -17,6 +16,7 @@ extension WeekView {
     override func setUpViews() {
         super.setUpViews()
         addNewView(stackView)
+        
     }
     
     override func setUpLayouts() {
@@ -36,12 +36,12 @@ extension WeekView {
         stackView.spacing = 7
         stackView.distribution = .fillEqually
         
-        // Standart week Seems like Sun-Sat
-        // we need from Mon-Sun
-        // removing sun from first element array and adding on the end of Array
-        var weekDays = calendar.shortStandaloneWeekdaySymbols
-        let sun = weekDays.removeFirst()
-        weekDays.append(sun)
+        var weekDays = Date.calendar.shortStandaloneWeekdaySymbols
+        
+        if Date.calendar.firstWeekday == 2 {
+            let sun = weekDays.remove(at: 0)
+            weekDays.append(sun)
+        }
         
         weekDays.enumerated().forEach { (index, name) in
             let view = WeekDayView()

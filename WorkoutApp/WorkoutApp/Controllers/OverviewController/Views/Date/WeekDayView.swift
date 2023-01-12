@@ -15,7 +15,7 @@ final class WeekDayView: BaseView {
     func configuration(weekNumber: Int, weekTitle: String) {
         let startOfWeek = Date().startOfWeek
         let currentDay = startOfWeek.goForward(days: weekNumber)
-        let day = Calendar.current.component(.day, from: currentDay)
+        let day = Date.calendar.component(.day, from: currentDay)
         
         let isCurrentDate = currentDay.stripDate() == Date().stripDate()
 
