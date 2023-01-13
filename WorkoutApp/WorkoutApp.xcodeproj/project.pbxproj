@@ -182,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				516990CA2970385700D14BDD /* Views */,
+				516990CC2970388000D14BDD /* TimerView.swift */,
 				51447D4C296B2D7600B5171F /* SessionViewController.swift */,
 			);
 			path = SessionController;
@@ -224,7 +225,6 @@
 		516990CB2970386500D14BDD /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				516990CC2970388000D14BDD /* TimerView.swift */,
 				516990CF2970388F00D14BDD /* ProgressView.swift */,
 			);
 			path = Timer;

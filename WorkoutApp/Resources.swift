@@ -39,6 +39,11 @@ enum Resources {
         enum OverviewController {
             static let allWorkoutButton = "All Workout"
         }
+        
+        enum SesionViewController {
+            static let elapsedTime = "Elabsed Time"
+            static let remainingTime = "Remaining Time"
+        }
     }
     
     enum Image {
