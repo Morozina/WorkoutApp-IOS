@@ -8,9 +8,8 @@
 import UIKit
 
 class SessionViewController: BaseViewController {
-
+    
     private let timerView = TimerView()
-    private let timerDuration = 13.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,6 @@ class SessionViewController: BaseViewController {
         
         addBarButton(position: .left, title: "Play")
         addBarButton(position: .right, title: "Finish")
-        
     }
 }
 
@@ -47,11 +45,13 @@ extension SessionViewController {
     
     override func config() {
         super.config()
-        timerView.configTimer(duration: timerDuration, progress: 0)
+        timerView.configTimer(duration: 0, progress: 0)
+        
     }
     
     override func rightButtonHandler() {
         timerView.stopTimer()
+        timerView.state = .isStoped
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(leftButtonHandler))
     }
     
@@ -61,6 +61,15 @@ extension SessionViewController {
             timerView.state = .isPaused
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(leftButtonHandler))
         } else {
+            timerView.configTimer(duration: timerView.timerDur, progress: 0)
+            timerView.callBack = {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                    self.timerView.stopTimer()
+                    self.timerView.state = .isStoped
+                    self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(leftButtonHandler))
+                }
+            }
+            
             timerView.startTimer()
             timerView.state = .isStarted
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Pause", style: .plain, target: self, action: #selector(leftButtonHandler))
